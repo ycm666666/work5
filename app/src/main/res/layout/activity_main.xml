@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Activity.MainActivity">
 
     <fragment
         android:id="@+id/fg"
-        android:name="com.ycm.work5.NavigationFragment"
+        android:name="com.ycm.work5.Fragment.NavigationFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

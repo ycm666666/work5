@@ -1,13 +1,14 @@
-package com.ycm.work5;
+package com.ycm.work5.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.ycm.work5.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        ImageView LoadingView = findViewById(R.id.iv_loading);
+        ImageView LoadingView = findViewById(R.id.tv_loading);
         Animation animation = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.anim);
         animation.setFillAfter(true);
         animation.setAnimationListener(new Animation.AnimationListener() {
