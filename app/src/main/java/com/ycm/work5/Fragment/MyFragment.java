@@ -11,10 +11,6 @@ import com.ycm.work5.R;
 import com.ycm.work5.Activity.LoginActivity;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-public class MyFragment extends Fragment{
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 
 public class MyFragment extends Fragment {
     @Nullable
@@ -22,7 +18,6 @@ public class MyFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment_my, container, false);
         ButterKnife.bind(this,view);
-        View view = inflater.inflate(R.layout.fragment_my, container, false);
         return view;
     }
     @OnClick(R.id.tv_my)
@@ -30,6 +25,4 @@ public class MyFragment extends Fragment {
         Intent intent = new Intent(getActivity(), LoginActivity.class);
         startActivity(intent);
     }
-
-
 }
