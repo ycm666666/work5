@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.Message;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,7 +17,7 @@ import butterknife.BindString;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import okhttp3.internal.http2.Header;
+
 
 public class AdActivity extends AppCompatActivity{
     @BindView(R.id.tv_count)
@@ -24,7 +25,7 @@ public class AdActivity extends AppCompatActivity{
     @BindView(R.id.tv_image)
     ImageView tv_image;
     @BindView(R.id.tv_root)
-   TextView tv_root;
+    RelativeLayout tv_root;
     @BindString(R.string.app_name)
     String str;
     @BindColor(R.color.colorAccent)
